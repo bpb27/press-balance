@@ -7,7 +7,11 @@ news.articles.forEach(item => {
   let words = item.title.split(' ');
   let sourceId = item.source.id;
   let sourceName = item.source.name;
-  let tags = sources.filter(source => source.id === sourceId)[0].tags;
+  let source = sources.filter(source => source.id === sourceId)[0];
+
+  if (!source) return;
+  
+  let tags = source.tags;
 
   words.forEach(word => {
     let sanitized = word.toLowerCase().replace(/[^a-zA-Z]+/g," ").replace(/\s/g,'');
@@ -36,3 +40,6 @@ news.articles.forEach(item => {
 });
 
 console.log(hash);
+
+var fs = require('fs');
+fs.writeFile('current-stats.json', JSON.stringify(hash), 'utf8');

@@ -3,7 +3,8 @@
     "id": "abc-news",
     "name": "ABC News",
     "tags": [
-      "center"
+      "center",
+      "network"
     ]
   },
   {
@@ -68,7 +69,8 @@
     "name": "CNBC",
     "tags": [
       "center",
-      "finance"
+      "finance",
+      "cable"
     ]
   },
   {
@@ -197,15 +199,6 @@
     ]
   },
   {
-    "id": "spiegel-online",
-    "name": "Spiegel Online",
-    "tags": [
-      "center",
-      "international",
-      "germany"
-    ]
-  },
-  {
     "id": "techcrunch",
     "name": "TechCrunch",
     "tags": [
@@ -221,7 +214,8 @@
       "right",
       "finance",
       "international",
-      "uk"
+      "uk",
+      "magazine"
     ]
   },
   {
