@@ -183,6 +183,14 @@
     ]
   },
   {
+    "id": "politico",
+    "name": "Politico",
+    "tags": [
+      "center",
+      "political"
+    ]
+  },
+  {
     "id": "reddit-r-all",
     "name": "Reddit /r/all",
     "tags": [
