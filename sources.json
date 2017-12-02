@@ -1,0 +1,321 @@
+[
+  {
+    "id": "abc-news",
+    "name": "ABC News",
+    "tags": [
+      "center"
+    ]
+  },
+  {
+    "id": "associated-press",
+    "name": "Associated Press",
+    "tags": [
+      "center",
+      "service"
+    ]
+  },
+  {
+    "id": "bbc-news",
+    "name": "BBC News",
+    "tags": [
+      "center",
+      "international",
+      "uk"
+    ]
+  },
+  {
+    "id": "bloomberg",
+    "name": "Bloomberg",
+    "tags": [
+      "center",
+      "finance"
+    ]
+  },
+  {
+    "id": "breitbart-news",
+    "name": "Breitbart News",
+    "tags": [
+      "right",
+      "alt-right",
+      "political"
+    ]
+  },
+  {
+    "id": "business-insider",
+    "name": "Business Insider",
+    "tags": [
+      "left"
+    ]
+  },
+  {
+    "id": "buzzfeed",
+    "name": "Buzzfeed",
+    "tags": [
+      "left",
+      "internet"
+    ]
+  },
+  {
+    "id": "cbs-news",
+    "name": "CBS News",
+    "tags": [
+      "center",
+      "network"
+    ]
+  },
+  {
+    "id": "cnbc",
+    "name": "CNBC",
+    "tags": [
+      "center",
+      "finance"
+    ]
+  },
+  {
+    "id": "cnn",
+    "name": "CNN",
+    "tags": [
+      "center",
+      "cable"
+    ]
+  },
+  {
+    "id": "daily-mail",
+    "name": "Daily Mail",
+    "tags": [
+      "right",
+      "international",
+      "uk",
+      "newspaper"
+    ]
+  },
+  {
+    "id": "entertainment-weekly",
+    "name": "Entertainment Weekly",
+    "tags": [
+      "left",
+      "entertainment",
+      "magazine"
+    ]
+  },
+  {
+    "id": "financial-times",
+    "name": "Financial Times",
+    "tags": [
+      "center",
+      "finance",
+      "international",
+      "uk"
+    ]
+  },
+  {
+    "id": "fox-news",
+    "name": "Fox News",
+    "tags": [
+      "right",
+      "cable"
+    ]
+  },
+  {
+    "id": "hacker-news",
+    "name": "Hacker News",
+    "tags": [
+      "center",
+      "tech"
+    ]
+  },
+  {
+    "id": "mashable",
+    "name": "Mashable",
+    "tags": [
+      "left",
+      "internet"
+    ]
+  },
+  {
+    "id": "msnbc",
+    "name": "MSNBC",
+    "tags": [
+      "left",
+      "cable"
+    ]
+  },
+  {
+    "id": "mtv-news",
+    "name": "MTV News",
+    "tags": [
+      "left",
+      "tv"
+    ]
+  },
+  {
+    "id": "national-geographic",
+    "name": "National Geographic",
+    "tags": [
+      "center",
+      "magazine"
+    ]
+  },
+  {
+    "id": "nbc-news",
+    "name": "NBC News",
+    "tags": [
+      "center",
+      "network"
+    ]
+  },
+  {
+    "id": "new-york-magazine",
+    "name": "New York Magazine",
+    "tags": [
+      "left",
+      "magazine"
+    ]
+  },
+  {
+    "id": "newsweek",
+    "name": "Newsweek",
+    "tags": [
+      "center",
+      "magazine"
+    ]
+  },
+  {
+    "id": "reddit-r-all",
+    "name": "Reddit /r/all",
+    "tags": [
+      "center",
+      "internet"
+    ]
+  },
+  {
+    "id": "reuters",
+    "name": "Reuters",
+    "tags": [
+      "center",
+      "service"
+    ]
+  },
+  {
+    "id": "spiegel-online",
+    "name": "Spiegel Online",
+    "tags": [
+      "center",
+      "international",
+      "germany"
+    ]
+  },
+  {
+    "id": "techcrunch",
+    "name": "TechCrunch",
+    "tags": [
+      "center",
+      "tech",
+      "internet"
+    ]
+  },
+  {
+    "id": "the-economist",
+    "name": "The Economist",
+    "tags": [
+      "right",
+      "finance",
+      "international",
+      "uk"
+    ]
+  },
+  {
+    "id": "the-guardian-uk",
+    "name": "The Guardian (UK)",
+    "tags": [
+      "left",
+      "international",
+      "uk",
+      "newspaper"
+    ]
+  },
+  {
+    "id": "the-hill",
+    "name": "The Hill",
+    "tags": [
+      "right",
+      "newspaper"
+    ]
+  },
+  {
+    "id": "the-huffington-post",
+    "name": "The Huffington Post",
+    "tags": [
+      "left",
+      "internet",
+      "political"
+    ]
+  },
+  {
+    "id": "the-new-york-times",
+    "name": "The New York Times",
+    "tags": [
+      "center",
+      "newspaper"
+    ]
+  },
+  {
+    "id": "the-telegraph",
+    "name": "The Telegraph",
+    "tags": [
+      "center",
+      "newpaper",
+      "international",
+      "uk"
+    ]
+  },
+  {
+    "id": "the-wall-street-journal",
+    "name": "The Wall Street Journal",
+    "tags": [
+      "right",
+      "finance",
+      "newspaper"
+    ]
+  },
+  {
+    "id": "the-washington-post",
+    "name": "The Washington Post",
+    "tags": [
+      "center",
+      "newspaper"
+    ]
+  },
+  {
+    "id": "time",
+    "name": "Time",
+    "tags": [
+      "center",
+      "magazine"
+    ]
+  },
+  {
+    "id": "usa-today",
+    "name": "USA Today",
+    "tags": [
+      "center",
+      "newspaper"
+    ]
+  },
+  {
+    "id": "vice-news",
+    "name": "Vice News",
+    "tags": [
+      "left"
+    ]
+  },
+  {
+    "id": "wired",
+    "name": "Wired",
+    "tags": [
+      "center",
+      "tech",
+      "magazine"
+    ]
+  }
+]
