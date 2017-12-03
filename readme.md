@@ -18,6 +18,10 @@
     1. Better than Node for IO
     2. Easy JSON parsing and iteration
 
+## Stats
+1. [X] Word frequency
+2. [X] Phrase frequency 1 through 5 - e.g. "flynn" to "michael flynn pleads guilty to"
+
 ## Front End Infrastructure
 1. React/Redux
 2. S3/CloudFront with CLI deploy (or Travis)

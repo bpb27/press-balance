@@ -7,24 +7,6 @@ const triple = {};
 const quadruple = {};
 const quintuple = {};
 
-function setOrIncrement(target, key) {
-  if (target[key]) target[key]++;
-  else target[key] = 1;
-}
-
-function assign (phrase, collection, sourceId, tags) {
-  if (collection[phrase]) {
-    collection[phrase].num++;
-    setOrIncrement(collection[phrase].sources, sourceId);
-    tags.forEach(tag => setOrIncrement(collection[phrase].tags, tag));
-  }
-  else {
-    collection[phrase] = {num: 1, sources: {}, tags: {}}
-    collection[phrase].sources[sourceId] = 1;
-    tags.forEach(tag => collection[phrase].tags[tag] = 1);
-  }
-}
-
 news.articles.forEach(item => {
   let sourceId = item.source.id;
   let sourceName = item.source.name;
@@ -66,6 +48,24 @@ news.articles.forEach(item => {
 
 });
 
+function setOrIncrement(target, key) {
+  if (target[key]) target[key]++;
+  else target[key] = 1;
+}
+
+function assign (phrase, collection, sourceId, tags) {
+  if (collection[phrase]) {
+    collection[phrase].num++;
+    setOrIncrement(collection[phrase].sources, sourceId);
+    tags.forEach(tag => setOrIncrement(collection[phrase].tags, tag));
+  }
+  else {
+    collection[phrase] = {num: 1, sources: {}, tags: {}}
+    collection[phrase].sources[sourceId] = 1;
+    tags.forEach(tag => collection[phrase].tags[tag] = 1);
+  }
+}
+
 function removeSingles (collection) {
   const newCollection = {};
   Object.keys(collection).forEach(phrase => {
@@ -74,12 +74,26 @@ function removeSingles (collection) {
   return newCollection;
 }
 
+function toArray (collection) {
+  return Object.keys(collection).map(phrase => {
+    let item = collection[phrase];
+    item.phrase = phrase;
+    item.sources = Object.keys(item.sources).map(id => ({id: id, num: item.sources[id]}));
+    item.tags = Object.keys(item.tags).map(id => ({id: id, num: item.tags[id]}));
+    return item;
+  }).sort((a,b) => {
+    if (a.num > b.num) return 1;
+    else if (a.num < b.num) return -1;
+    else return 0;
+  }).reverse();
+}
+
 const all = {
-  single: removeSingles(single),
-  double: removeSingles(double),
-  triple: removeSingles(triple),
-  quadruple: removeSingles(quadruple),
-  quintuple: removeSingles(quintuple)
+  single: toArray(removeSingles(single)),
+  double: toArray(removeSingles(double)),
+  triple: toArray(removeSingles(triple)),
+  quadruple: toArray(removeSingles(quadruple)),
+  quintuple: toArray(removeSingles(quintuple))
 }
 
 var fs = require('fs');

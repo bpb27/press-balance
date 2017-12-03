@@ -15,3 +15,10 @@ var urls = [
 ];
 
 console.log(urls);
+
+var nonIndexedSources = {
+  "ny-post": "https://newsapi.org/v2/everything?domains=nypost.com&apiKey=" + apiKey
+}
+
+
+// https://newsapi.org/v2/everything?domains=nypost.com&from=2017-12-03T10:13:06&apiKey=
